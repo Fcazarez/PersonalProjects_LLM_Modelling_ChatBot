@@ -1,0 +1,608 @@
+{
+    "intents": [
+		{
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey", 
+                "Hola", 
+                "Hello", 
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking", 
+                "Good to see you again", 
+                "Hi there, how can I help?"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye", 
+                "See you later", 
+                "Goodbye", 
+                "Nice chatting to you, bye", 
+                "Till next time"
+            ],
+            "responses": [
+                "See you!", 
+                "Have a nice day", 
+                "Bye! Come back again soon."
+            ],
+            "context": [""]
+        },
+        {   
+            "tag": "thanks",
+            "patterns": [
+                "Thanks", 
+                "Thank you", 
+                "That's helpful", 
+                "Awesome, thanks", 
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!", 
+                "Any time!", 
+                "My pleasure"
+            ],
+            "context": [""]
+        },
+        {   
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you", 
+                "Please give me more info", 
+                "Not sure I understand"],
+            "context": [""]
+        },
+        {
+            "tag": "covid19_tax_impact",
+            "patterns": [
+                "How will COVID-19 benefit payments affect your 2022 taxes?"
+            ],
+            "responses": [
+                "We have entered a different phase of the pandemic, and the emergency and recovery benefits provided during the COVID-19 pandemic have now ended.",
+                "Canadians continued to receive COVID-19 benefit payments in 2022. The CRA will issue T4A slips by the end of February 2023."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "t4a_rl1_slip",
+            "patterns": [
+                "Why did you get a T4A or an RL-1 slip for COVID-19 benefits?"
+            ],
+            "responses": [
+                "Those who received COVID-19 emergency or recovery benefit payments from the CRA will receive a T4A slip by the end of February 2023.",
+                "Residents of Quebec will receive both a T4A and RL-1 slip."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "no_t4a",
+            "patterns": [
+                "Did you receive COVID-19 benefit payments but do not have a T4A slip? What should you do?"
+            ],
+            "responses": [
+                "A T4A slip will be mailed to you by the end of February 2023.",
+                "If you received COVID-19 benefit payments and did not get a T4A or an RL-1 slip, contact the CRA."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "incorrect_t4a_rl1",
+            "patterns": [
+                "What should you do if your T4A or RL-1 slip has incorrect information?"
+            ],
+            "responses": [
+                "Contact the CRA right away if you notice an error on your T4A or RL-1 slip.",
+                "The individual tax enquiries line is open Monday to Friday 8am to 8pm, local time."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "repayment_t4a",
+            "patterns": [
+                "What happens if you made a payment or payments toward your COVID-19 benefit overpayment? Will that appear on your T4A slip?"
+            ],
+            "responses": [
+                "If you made a repayment to the CRA between January 1 and December 31, 2022, for an excess payment received in 2020 or 2021, this amount will be shown in box 201 of your 2022 T4A slip.",
+                "For repayments made in 2022 of benefits received in the same year, only the difference will be reported in the appropriate benefit box."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "deduct_repayment_t1b",
+            "patterns": [
+                "What if you would like to make a request to deduct federal COVID-19 benefit repayments in a prior year (Form T1B)?"
+            ],
+            "responses": [
+                "Complete and include Form T1B with your 2022 income tax and benefit return to request to have the amount of federal COVID-19 benefits that you repaid in 2022 deducted on your return for the year you received the benefit.",
+                "The CRA will reassess your return(s) to apply the deduction."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "issues_rl1",
+            "patterns": [
+                "What should you do if there are issues with your RL-1 slip?"
+            ],
+            "responses": [
+                "Quebec residents who notice issues with their RL-1 slip should contact the CRA."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "enter_benefit_return",
+            "patterns": [
+                "What amount of COVID-19 benefits do you need to enter on your income tax and benefit return?"
+            ],
+            "responses": [
+                "You will need to enter the total amount of benefit payments you received and any tax that was withheld.",
+                "Report the amounts stated on your T4A slip."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "received_letter_t4a",
+            "patterns": [
+                "You received a letter or a T4A slip stating that you received a COVID-19 benefit payment but you never applied. What do you do?"
+            ],
+            "responses": [
+                "To report payments received in error or fraudulent activity related to COVID-19 benefits, contact the CRA as soon as possible.",
+                "The CRA is working to ensure your tax information is protected from fraud."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "file_while_waiting",
+            "patterns": [
+                "Should you file your 2022 income tax and benefit return if you are waiting for the CRA to resolve an issue with the T4A slip you received?"
+            ],
+            "responses": [
+                "Yes. The CRA encourages everyone to file by April 30, 2023.",
+                "File using the information you have available to avoid late-filing penalties."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "refund_exempt_income",
+            "patterns": [
+                "Your income is exempt under section 87 of the Indian Act, but 10% tax was deducted from your Canada Recovery Benefit (CRB), Canada Recovery Caregiving Benefit (CRCB), or Canada Recovery Sickness Benefit (CRSB) payment. How can you get a refund of the withheld amounts you are entitled to?"
+            ],
+            "responses": [
+                "Tax will be withheld on all CRB, CRCB, or CRSB payments, including those made to individuals with income that may be exempt from tax.",
+                "To get a refund, file a tax return for the year you received the payments."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "self_employed_subsidies",
+            "patterns": [
+                "If you are self-employed and received COVID-19 subsidies for your business, what do you need to know?"
+            ],
+            "responses": [
+                "If you received one or more emergency or recovery subsidies, the amounts you received are considered government assistance and are taxable.",
+                "Report the subsidies on your income tax or information return for the tax year in which you are considered to have received them."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "report_subsidy",
+            "patterns": [
+                "How do you report a subsidy on your return?"
+            ],
+            "responses": [
+                "How you report a subsidy on your tax or information return depends on the type of entity you are.",
+                "Individuals, sole proprietors, self-employed farmers, self-employed fishers, and partners in a partnership can report subsidies accordingly."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "tax_help",
+            "patterns": [
+                "Where can you get tax help?"
+            ],
+            "responses": [
+                "If you have a modest income and a simple tax situation, volunteers at a free tax clinic may be able to complete your tax return through the Community Volunteer Income Tax Program.",
+                "The CRA has launched an online learning tool to help empower you to do your taxes on your own."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "missing_t4",
+            "patterns": [
+                "Your employer went out of business and you don’t have your T4 slip. Where do you get it and other slips?"
+            ],
+            "responses": [
+                "If you are registered for My Account, you can get a copy of your T4 slip and other tax slips online.",
+                "Even if you don’t have all your tax slips, file by the deadline to avoid penalties and interest."
+            ],
+            "context": [""]
+        },
+		{
+            "tag": "change_address",
+            "patterns": [
+                "How do you change your address with the CRA?"
+            ],
+            "responses": [
+                "You can change your address using My Account or My Business Account. Other options include mail, fax, certified tax software, or by calling 1-800-959-8281."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "authorize_representative",
+            "patterns": [
+                "How do you give someone permission to access your tax information?"
+            ],
+            "responses": [
+                "If you are registered for My Account, you can add an authorized representative. They can also submit an authorization request through Represent a Client or file your tax return through EFILE."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "free_tax_help",
+            "patterns": [
+                "How can you get free tax help if you’re the owner of a small business or self-employed?"
+            ],
+            "responses": [
+                "The CRA offers free help through the Liaison Officer Service for small-business owners and self-employed individuals. They provide assistance by phone or videoconference to help you understand tax obligations and deductions."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "direct_deposit",
+            "patterns": [
+                "Is direct deposit available?",
+                "How do you sign up for direct deposit?"
+            ],
+            "responses": [
+                "Yes, direct deposit is available. You can sign up through My Account, financial institutions, or by calling 1-800-959-8281."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "income_tax_package",
+            "patterns": [
+                "Where can you get the 2022 income tax package?"
+            ],
+            "responses": [
+                "If you filed your 2021 return on paper, the CRA should mail you the 2022 income tax package. If not received by February 20, you can view, download, and print it from canada.ca/taxes-general-package or order it online or by calling 1-855-330-3305."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "file_return_services",
+            "patterns": [
+                "What services are available that can help me file?"
+            ],
+            "responses": [
+                "The CRA has certified tax software, free tax clinics, File my Return service, EFILE, and an online learning tool. Filing online is encouraged for faster processing."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "benefit_deduction_credits",
+            "patterns": [
+                "What types of benefit payments, deductions, and tax credits are available by filing a return?"
+            ],
+            "responses": [
+                "By filing a return, you may be eligible for benefits like Canada child benefit, GST/HST credit, Canada training credit, Canada workers benefit, and various deductions and tax credits."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "report_principal_residence_sale",
+            "patterns": [
+                "Do you have to report the sale of your principal residence?"
+            ],
+            "responses": [
+                "Yes, when you sell your principal residence, you have to report the sale and designate it as your principal residence on your income tax return. Provide basic information about the property."
+            ],
+            "context": [""]
+        },
+		{
+		  "tag": "income_tax_and_benefit_return",
+		  "patterns": [
+			"Do you have to file an income tax and benefit return?"
+		  ],
+		  "responses": [
+			"You should find out about your tax obligations to see if you need to file an income tax and benefit return. Filing a return is the only way to receive refunds as well as certain benefits and credits, including the Canada child benefit, the Canada workers benefit, the goods and services tax/harmonized sales tax credit, the Guaranteed Income Supplement and related provincial and territorial payments.\n\nTo continue getting your benefit and credit payments, you need to do your taxes on time every year, even if your income is tax exempt or you had no income at all."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "filing_payment_deadline_2022",
+		  "patterns": [
+			"What is the filing and payment deadline for your 2022 income tax and benefit return?"
+		  ],
+		  "responses": [
+			"The income tax and benefit return for individuals who are not self-employed is due on April 30, 2023. Since April 30, 2023, falls on a Sunday, your return will be considered filed on time if the CRA receives it, or it is postmarked, on or before Monday, May 1, 2023.\n\nIf you have a balance owing, your payment is due on April 30, 2023. Your payment will be considered on time if the CRA receives it, or a Canadian financial institution processes it, on or before May 1, 2023.\n\nWe encourage you to file your return before the deadline to avoid any late-filing penalty and interest charges if you have a balance owing. Filing your return early and online will also help you get any refund faster and avoid interruptions to any benefit and credit payments.\n\nIf you cannot pay the full balance owing, you can make a payment arrangement with the CRA. In certain circumstances, the CRA may grant relief from penalties and interest."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "filing_payment_deadlines_self_employed",
+		  "patterns": [
+			"What are the filing and payment deadlines for your 2022 income tax and benefit return if you are self-employed?"
+		  ],
+		  "responses": [
+			"A self-employed individual and their spouse or common-law partner have until June 15, 2023, to file their 2022 income tax and benefit returns. However, any balance owing is still due by April 30, 2023. However, since April 30, 2023, is a Sunday, your payment will be considered paid on time if the CRA receives it or it is processed at a Canadian financial institution on or before May 1, 2023.\n\nIf you cannot pay the full balance owing, you can make a payment arrangement with the CRA. In certain circumstances, the CRA may also grant relief from penalties and interest."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "file_your_return",
+		  "patterns": [
+			"How can you file your return?"
+		  ],
+		  "responses": [
+			"There are different ways to file your income tax and benefit return. Learn about your taxes is a free online learning tool that can help guide you through doing your taxes.\n\n**Online**\nIndividuals filed 92% of returns electronically.\n\nYou can file as early as February 20, 2023, with NETFILE. The CRA has a list of certified tax software products you can use to file your return, some of which are free.\n\nWe have also got a Get ready to do your taxes page that provides you with information you need to know. Filing online is always the fastest, easiest, and safest choice! Keep in mind that the service standard for processing digital returns is two weeks and for processing paper returns, it may take up to eight weeks.\n\nWhen you file online using certified tax software, your return is sent directly to us. You also:\n- may get your refund faster (with direct deposit, you could receive your refund in as little as eight business days)\n- don’t have to mail anything, and you avoid mailing delays\n- don’t have to send receipts (but make sure to keep your receipts in case we ask for them later)\n- get instant confirmation that we’ve received your return\n- can change your return (through the ReFILE service)\n\nIf you are registered for My Account and you file your return electronically, you can:\n- automatically fill in parts of your return with information the CRA has on file (through Auto-fill my return)\n- receive an express notice of assessment right after the CRA has received and processed your return in certified tax software or in My Account.\n- conveniently view your registered retirement savings plan (RRSP) deduction limit and Tax-Free Savings Account (TFSA) contribution room online\n\n**Through the Community Volunteer Income Tax Program (or the Income Tax Assistance – Volunteer Program if you live in Quebec)**\nIf you have a modest income and a simple tax situation, volunteers at a free tax clinic may be able to complete your tax return through the Community Volunteer Income Tax Program. In Quebec, you can check with the Income Tax Assistance – Volunteer Program. Tax clinics are offered across Canada between March and April, but some are open year-round. Organizations can host in-person clinics, or may offer virtual clinics where your return can be completed by videoconference, by phone, or through a document drop-off arrangement. For more information, go to canada.ca/taxes-help.\n\n**Filing by paper**\nThe 2022 income tax and benefit package will be sent to paper filers who filed their 2021 income tax and benefit return on paper. The package should arrive by February 20, 2023.\n\nIf you do not receive it by February 20, you can:\n- view, download, and print the package from canada.ca/taxes-general-package\n- order it online at canada.ca/get-cra-forms\n- order a package by calling the CRA at 1-855-330-3305 (be ready to give your social insurance number)\n\nIt can take up to 10 business days for the package to arrive by mail. Include this time in your tax planning so you do not miss the filing deadline.\n\nYou can order or download the 2022 income tax package as of January 24, 2023.\n\nThose with a modest income and a simple tax situation may be able to use the CRA’s SimpleFile: Let us help you get your benefits! simplified paper return. These returns are available through Northern Service Centres, band councils offices and Friendship Centres and cannot be downloaded. Individuals are encouraged to check with their local office to get a paper copy. Individuals may be able to use this simplified return if their taxable income is less than the basic income threshold for the province or territory in which they reside. The information provided on the simplified return will help the CRA calculate the Canada child benefit (CCB) and goods and services tax/harmonized sales tax credit (GST/HST credit) for which the individual may be eligible, as well as related provincial and territorial programs.\n\nIf you are unsure about the taxability of your income, we encourage you to consult the Reporting income web page.\n\n**File my Return**\nEligible individuals who have a lower or fixed income can file their return using the automated phone service, File my Return. Eligible individuals will receive an"
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "file_return_online_first_time",
+		  "patterns": [
+			"Can you file your return online if you have never filed a return before?"
+		  ],
+		  "responses": [
+			"If you are filing returns for the first time, you can file your return online using certified tax software.\n\nIf you received COVID-19 benefits issued by the CRA and filing your first return, make sure the CRA has the correct information on file for you, for example, your correct address and marital status. If the CRA does not have your current information, please update it before you file.\n\nWe encourage you to file online, rather than on paper. If you file a paper return, it will take longer and your notice of assessment may go to the wrong address."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "file_previous_years_taxes",
+		  "patterns": [
+			"I have not filed my taxes for previous years, how can I file my tax returns?"
+		  ],
+		  "responses": [
+			"You may be able to file returns for tax years 2017 and after using certified tax software.\n\nIf you received COVID-19 benefits issued by the CRA or have filed in the past, to avoid delays in receiving your notice of assessment or it going to the wrong address, make sure the CRA has the correct information on file for you. If the CRA does not have your current information, please update it before you file.\n\nIf you are filing returns from before 2017, you will need to file paper returns. These returns can be found on our tax packages for all years web page.\n\nThe CRA will charge you a late-filing penalty if you file your 2022 tax return after the due date and you owe tax that remains unpaid at that time.\n\nThe CRA encourages you to come forward and correct inaccurate or incomplete information, or to disclose information not previously reported through the Voluntary Disclosures Program (VDP). If the CRA accepts your application, you will receive relief from prosecution, and in some cases, be eligible for relief from penalties and some of the interest you would normally be required to pay."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "file_nonresident_canada",
+		  "patterns": [
+			"You are not living in Canada. What is the best way to send your income tax and benefit return?"
+		  ],
+		  "responses": [
+			"If you are living outside Canada, but are considered a Canadian resident for tax purposes and have a Canadian mailing address, we strongly encourage you to file your return online.\n\nNon-resident Canadians who do not receive their income tax package by February 20, 2023, should download and print the income tax package online at canada.ca/taxes-general-package.\n\nTo lessen the impacts of international mail delays for non-residents, the CRA is currently accepting tax returns by fax to one of our tax centres.\n\nIf you are a resident of Canada with a non-Canadian mailing address, the EFILE service will now accept your T1 return for the 2021 and later tax years. However, this change doesn’t apply to the NETFILE service, which still requires a Canadian mailing address.\n\nIf you are not sure about your residency status for Canadian tax purposes, see Determining your residency status."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "underused_housing_tax_return",
+		  "patterns": [
+			"Do you need to file an Underused Housing Tax return (UHT)?"
+		  ],
+		  "responses": [
+			"The Underused Housing Tax (UHT) is an annual 1% tax on the ownership of vacant or underused housing in Canada that took effect on January 1, 2022. The tax usually applies to non-resident, non-Canadian owners. In some situations, however, it also applies to Canadian owners. If you are an affected owner of a residential property in Canada on December 31, you must file an UHT return for the calendar year. Even if your ownership of the property qualifies for an exemption and you do not owe any tax, you still must file a return. Services for the UHT will be added in both My Account and My Business Account for those that need to manage taxes on properties within Canada and that do not meet the usage requirements. For more information, go to Underused Housing Tax."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "information_safety_online",
+		  "patterns": [
+			"Is your information safe online?"
+		  ],
+		  "responses": [
+			"Our digital services use a high level of online protection, to keep your personal information safe.\n\nTo ensure that Canadians can feel confident using our digital services, we have added some new security measures. These measures include captcha, which helps distinguish between human users and bots when signing in to CRA portals. A captcha requires you to enter specific characters or identify specific images before you can access digital services.\n\nAs well, we have added multi-factor authentication for all users to help make your CRA sign-in services more secure! To ensure everyone can use it, we’ve introduced a new passcode grid option. Learn more at Multi-factor authentication to access CRA sign-in services.\n\nWe have also introduced an optional, additional security measure that allows you to set a unique personal identification number (PIN) for your account so you can identify yourself quickly and securely on the phone with the CRA. You can create your PIN through My Account.\n\nWe also encourage Canadians to help protect their personal information by using a unique and strong password for each online account. Do not reuse the same password for different systems and applications, and regularly monitor all your online accounts for suspicious activity.\n\nAs an additional security measure, all My Account users must have an email address on file. This service notifies you by email if important information, including your address or direct deposit information, has been changed on our records. If we notify you of a change you did not authorize, you should contact us immediately through the individual tax enquiries line at 1-800-959-8281 and select the option 'report suspected fraud or identity theft' to speak to a specialized agent as quickly as possible."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "taxes_and_benefits_questions",
+		  "patterns": [
+			"If you have questions about your taxes or benefits, where can you go?"
+		  ],
+		  "responses": [
+			"Before calling the CRA, we encourage you to check our digital services. Many answers can be found in our improved web content or by using CRA sign-in services like My Account. Or you can ask your general tax filing questions online to Charlie, our helpful chatbot.\n\nYou can get general information from our:\n\n- Get ready to do your taxes web pages\n- Tax Information Phone Service (TIPS): 1-800-267-6999\n- Telerefund service: 1-800-959-1956\n- Individual tax enquiries line: 1-800-959-8281\n\nThe individual tax enquiries line is open Monday to Friday 8 am to 8 pm, local time, and Saturday 9 am to 5 pm, local time, except on holidays.\n\nIf you are a small business owner or self-employed, you can get information by:\n\n- using our business and self-employed phone service: 1-800-959-5525\n- booking a phone call, video conference, or a group webinar with our Liaison Officer Service"
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "common_tax_return_mistakes",
+		  "patterns": [
+			"What are some of the common mistakes people make on their income tax and benefit return?"
+		  ],
+		  "responses": [
+			"Everyone makes mistakes. If you make a mistake on your income tax and benefit return, it can take longer for us to review your return and prevent you from getting any tax refund, credit, or benefit on a timely basis. Mistakes can also lead to a higher chance of a review or an audit of your return.\n\nTo help you avoid mistakes, below is a list of some errors:\n- Not reporting all income\n- Not supporting business income and expense claims\n- Not keeping personal information up to date\n- Personal expenses\n- Writing the amount of your partial payment on your paper return\n- Filing Form T1135, Foreign Income Verification Statement, late\n\nIf you think you may have made a mistake, see Question 52. If you are a small business owner or self-employed, you can get free tax help by booking a virtual visit by phone or video conference with a Liaison Officer. Liaison Officers can answer your tax-related questions (income, GST/HST, payroll), help you better understand possible business deductions, and show you how to avoid common errors. To book your virtual visit or webinar, go to Liaison Officer Service."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "voluntary_disclosures_program",
+		  "patterns": [
+			"Is the Voluntary Disclosures Program available for taxpayers to fix errors or omissions in their tax filings, including the T1135?"
+		  ],
+		  "responses": [
+			"Yes. If you did not file Form T1135 or if the information you provided is incomplete, the CRA encourages you to come forward and correct inaccurate or incomplete information, or to disclose information not previously reported through the Voluntary Disclosures Program (VDP). If the CRA accepts your application, you will receive prosecution relief, and in some cases, penalty relief and partial interest relief that you would have otherwise needed to pay.\n\nThe VDP is also available for all taxpayers who would like to disclose information they did not report or correct information they already submitted, as long as they meet certain conditions."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "non_refundable_tax_credit",
+		  "patterns": [
+			"What is a non-refundable tax credit?"
+		  ],
+		  "responses": [
+			"A non-refundable tax credit reduces the tax you may owe. However, if the total of your non-refundable tax credits is more than what you owe, you won’t get a refund for the difference."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "my_account_information",
+		  "patterns": [
+			"What is My Account?"
+		  ],
+		  "responses": [
+			"My Account is a secure, easy, and convenient tool that lets you view your income tax and benefit information and manage your tax affairs online. You can use My Account to:\n\n- change your personal information, such as your address, phone number, and marital status\n- make a payment\n- track the status of your return\n- receive email notifications when you have correspondence to view from the CRA and when important information is changed on your account\n- view your tax slips and notice of assessment\n- view and print your proof of income statement\n- ask for a change to your return using Change My Return\n- check your benefit and credit payment dates and amounts\n- apply for child benefits\n- check the status of your Form RC66, Canada Child Benefits Application, and update or view information about the children in your care\n- view uncashed cheques from the CRA and ask for a replacement payment\n- view your disability tax credit information\n- check the deduction limit for your registered retirement savings plan and the contribution limit for your tax-free savings account\n- set up a personal identification number to identify yourself when calling the CRA\nand more"
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "register_for_my_account",
+		  "patterns": [
+			"How do you register for My Account?"
+		  ],
+		  "responses": [
+			"You can go online to register for My Account. You will have to create a CRA user ID and password or use a sign-in partner.\n\nTo register using a CRA user ID and password you’ll need to provide us with personal information:\n\n- your social insurance number, date of birth, and current postal code or zip code\n- a line amount from one of your past income tax and benefit returns. Have a copy of your two most recent returns handy. The line amount requested will vary. It could be from the current tax year or the previous one. To register, a return for one of these two years must have been filed and assessed\n\nNext, you’ll need to:\n\n- create a CRA user ID and password\n- choose and answer five security questions\n- enroll in mandatory multi-factor authentication\n\nAfter completing the above steps, you will have limited access to My Account.\n\nAfter you’ve registered, you’ll have access to all the services available in My Account.\n\nTo register with a sign-in partner, you’ll need to:\n\n- select “Sign-In Partner”\n- on the Interac sign-in service page, choose the sign-in partner you want to use and sign in\n- enter your social insurance number, date of birth, and current postal code or zip code\n- have a copy of your income tax and benefit returns from the last two years handy. To register, you must have filed a return for one of these two years\n- enter the requested amount from one of your returns. The line amount requested will vary and could be from the current tax year or the previous one\n- enroll in the multi-factor authentication process\n\nTo complete your registration and have full access to My Account you need to:\n\n- receive the CRA security code that is sent to you by mail. The CRA security code has an expiry date. Follow the instructions provided before the code expires. If your code has expired, call 1-800-959-8281 to have a new one issued to you\n- return to My Account, select “Sign-In Partner,” enter the requested information, and when asked, enter your CRA security code\n\nWe have added multi-factor authentication for all users to help make our CRA sign-in services more secure! Learn more at Multi-factor authentication to access CRA sign-in services.\n\nIf you have a provincial digital ID, you can use it to sign in to My Account. This service is only for British Columbia and Alberta residents at this time.\n\nTo sign in again, go to the CRA sign-in services page. You will have full access to My Account."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "cra_email_notifications",
+		  "patterns": [
+			"What are email notifications from the CRA?"
+		  ],
+		  "responses": [
+			"This service lets you receive email notifications from the CRA when important changes are made on your account and when you have mail to view in My Account.\n\nWe take the protection of Canadians’ tax information very seriously. To better protect you and your personal information, we require that you provide your email address to use My Account, as an extra layer of security. Through an email notification, the CRA will notify you of important information, including if your address or direct deposit information has been changed on CRA records. If you receive a CRA email notification about a change that you did not authorize, you should contact the CRA as soon as possible."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "receive_email_notifications",
+		  "patterns": [
+			"Do I have to receive email notifications?"
+		  ],
+		  "responses": [
+			"My Account users are required to have an email address on file with the CRA to help protect their accounts from fraudulent activity. This security feature ensures that you receive email notifications when important changes are made to your account.\n\nWhile some email notifications will be mandatory to ensure the security of your account, such as when your address or direct deposit information is changed, you will be able to choose to receive additional optional notifications, such as when you have uncashed cheques.\n\nThis security feature will not affect your preferred method of receiving CRA mail. You will have the option to receive mail either by paper or an email notification when you have new mail to view in My Account. To receive email notifications when you have new mail to view in My Account and to stop receiving paper mail through Canada Post, you must set your correspondence preferences to “Electronic mail”.\n\nIf you are new to My Account, you will be asked to provide your email address as part of the registration process.\n\nSign in before tax season to make sure you have access and your personal information is up to date."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "cra_email_notification_security",
+		  "patterns": [
+			"How do you know if an email notification is from the CRA?"
+		  ],
+		  "responses": [
+			"The CRA will never use aggressive language or tone, ask for prepaid credit cards, threaten arrest, or threaten to send police. A CRA email notification will only advise you that you have mail to view in My Account or that important information was changed on CRA records. A notification will never ask you to confirm information or click on a link. Emails sent from the CRA’s email notification service will have the sender name 'Canada Revenue Agency / Agence du revenue du Canada.'"
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "digital_services_tax_season",
+		  "patterns": [
+			"What digital services are available for tax time this year?"
+		  ],
+		  "responses": [
+			"We have got a range of digital services to help you file this tax season. Most of these services require access to My Account. Register or sign in before tax season to make sure you have access to My Account and that your personal information is up to date.\n\nOur digital services include:\n\n- Auto-fill my return\n- Express NOA\n- Email notifications\n- ReFILE\n- File my Return\n- Tax Information Phone Service (TIPS)\n- Check CRA processing times\n- Charlie the CRA chatbot\n- View uncashed cheques from the CRA\n- Personal identification number (PIN)\n\nAfter filing your income tax and benefit return"
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "get_refund_quickly",
+		  "patterns": [
+			"How can you get your refund quickly?"
+		  ],
+		  "responses": [
+			"The fastest way to get your refund is by combining online filing with direct deposit. You could get your refund in as little as eight business days. Direct deposit is fast, convenient, and secure. You can also register for CRA direct deposit through your financial institution."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "check_return_status",
+		  "patterns": [
+			"How can you check the status of your income tax and benefit return?"
+		  ],
+		  "responses": [
+			"You can check the status of your return through My Account. To find the date we target to complete processing your return, you can go to Check CRA processing times. Our service standard is to issue your notice of assessment (NOA) within two weeks of receiving your digital return. If you are eligible to use the Express NOA service, you will be able to view your NOA right after the return has been received and processed by the CRA. Canadians who file electronically and who are signed up for direct deposit may get their refund in as little as eight business days.\n\nIt may take 10 to 12 weeks for us to process paper returns. The CRA processes them in the order it receives them."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "save_supporting_documents",
+		  "patterns": [
+			"How long do you need to save your supporting documents?"
+		  ],
+		  "responses": [
+			"As a general rule, you have to keep all supporting documents for at least six years from the end of the last tax year they relate to. However, if you filed your income tax and benefit return late, keep your documents for six years after the day you filed your return. These documents help support any deduction or credit you claimed.\n\nIf you are self-employed or a sole proprietor, you may need to keep some of your business records for a longer period of time."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "pay_income_tax_debt",
+		  "patterns": [
+			"What options do you have for paying an income tax debt? What if you cannot pay your balance owing?"
+		  ],
+		  "responses": [
+			"Although owing income tax can be a normal occurrence, it is important to address it without delay. Income tax debt can accrue interest. If you owe money to the CRA but cannot pay your balance when it's due, we still encourage you to file your income tax and benefit return on time.\n\nWe encourage you to contact us if you cannot pay the full amount owed on time. We understand that a tax debt payment could present a significant financial hardship. We can help you find a payment option that will allow you to pay your balance owing over time. The CRA charges interest on what you owe until your balance is paid. To discuss a payment arrangement, call us at 1-888-863-8657.\n\nIn some circumstances, you may ask for relief from penalties and interest, and reduce the amount you owe. Go to Cancel or waive penalties and interest for more information."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "pay_cra_options",
+		  "patterns": [
+			"How can you pay the CRA?"
+		  ],
+		  "responses": [
+			"You can pay your tax in different ways:\n\n- through your financial institution’s online or telephone banking service\n- through the new 'Proceed to Pay' buttons in My Account. The information you need to make a payment will show after you select a payment method:\n  - My Payment – Using your Visa® Debit, Debit MasterCard®, or Interac® Online debit card from a participating financial institution\n  - Pre-authorized debit from your Canadian chequing account\n  - By cash or debit at any Canada Post outlet, using the RV code on a remittance voucher or a QR code, which you generate from the CRA web pages\n  - using the My Payment service in My Account\n  - by credit card, PayPal, or Interac e-Transfer through a third-party service provider\n  - by setting up a pre-authorized debit agreement to pay from your Canadian chequing account\n\nThe best way to ensure that your payment is received on time and avoid arrears interest is to use one of our electronic payment options.\n\nIf you still want to make a payment in person, you can pay:\n\n- at any Canada Post outlet, using cash or a debit card. To do so, you will need a QR code. You can create a QR code using My Account or MyCRA. A Canada Post clerk will scan the QR code so that we can credit your account. The service fee is based on the amount of your payment. If you create a QR code from our web pages, the fee will display with your code.\n- at a Canadian financial institution with a remittance voucher. You can order personalized remittance vouchers and in some cases print your own. See Order remittance vouchers or payment forms."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "file_on_time",
+		  "patterns": [
+			"Should you file your income tax and benefit return on time if you owe money and cannot afford to pay it all right away?"
+		  ],
+		  "responses": [
+			"The payment deadline for individuals is April 30, 2023. A payment will be considered on time if the CRA receives it or it is processed at a Canadian financial institution by midnight on May 1, 2023. Even if you cannot pay the balance owing on or before April 30, 2023, you should still file your income tax and benefit return on time to avoid a late-filing penalty and any interest charges thereon."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "late_filing_penalties",
+		  "patterns": [
+			"What are the penalties for filing your income tax and benefit return late and for not paying what you owe to the CRA on time?"
+		  ],
+		  "responses": [
+			"If you have a balance owing for the year and do not file your income tax and benefit return on time, you will be charged a late-filing penalty. The penalty is 5% of your balance owing that remained unpaid when the return was required to be filed, plus an additional 1% for each full month your return is late (up to a maximum of 12 months).\n\nIf you were charged a late-filing penalty on any of your returns for 2019 to 2021 and you have been sent a demand to file a tax return for 2022, your late-filing penalty for 2022 may be higher. The penalty is 10% of your balance owing that remained unpaid when the return was required to be filed, plus an additional 2% for each full month your return is late (to a maximum of 20 months)."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "relief_from_penalties_interest",
+		  "patterns": [
+			"Can you ask for relief from penalties or interest you have been charged for filing or paying late?"
+		  ],
+		  "responses": [
+			"The Minister may grant relief from penalties or interest when the following types of situations prevent a taxpayer from meeting their tax obligations:\n\n- extraordinary circumstances\n- actions of the CRA\n- inability to pay or financial hardship\n- other circumstances\n\nFor more information about the circumstances that may warrant relief from penalties and interest, see Cancel or waive penalties and interest."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "correct_mistake_on_return",
+		  "patterns": [
+			"What should you do if you make a mistake on your income tax and benefit return?"
+		  ],
+		  "responses": [
+			"We recognize that you are doing your best to file accurate tax returns. However, if you realize that you have made a mistake, do not file another return for that year. Wait until you receive your notice of assessment before making any changes to your return.\n\nGenerally, you can request a change only to a return for a tax year ending in any of the 10 previous calendar years. For example, a request made in 2023 must relate to the 2013 tax year or later.\n\nYou can request an adjustment to your return by using Change my Return in My Account or ReFILE through NETFILE-certified software. With the ReFILE service, you can find out right away if your refund or amount owing has changed. It’s quick and simple!\n\nYou may also mail a paper Form T1-ADJ, T1 Adjustment Request with any supporting documents to your tax centre (listed on the form)."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "dispute_notice_of_assessment",
+		  "patterns": [
+			"What if you want to formally dispute your notice of assessment, reassessment, or determination?"
+		  ],
+		  "responses": [
+			"You can file a formal dispute or objection if you think the CRA misinterpreted the facts of your situation or applied the law incorrectly. Go to File an objection to find out the best option for you."
+		  ],
+		  "context": [""]
+		},
+		{
+		  "tag": "feedback_on_cra_service",
+		  "patterns": [
+			"What do you do if you want to provide feedback on the CRA’s service?"
+		  ],
+		  "responses": [
+			"If you have compliments, suggestions, or are not satisfied with the services you received from us, we encourage you to make your voice heard, as your feedback is important in helping us put people first. The CRA is committed to serving you with high standards of accuracy, professionalism, courtesy, and fairness, and we welcome all input that enables us to meet that commitment.\n\nFor more information on:\n\n- your rights and what you can expect when you deal with the CRA, go to Taxpayer Bill of Rights\n- how to submit service feedback, go to Submit Service Feedback or complete Form RC193, Service Feedback\n- how to file a complaint if you believe you have experienced a reprisal, go to Reprisal Complaints"
+		  ],
+		  "context": [""]
+		}		
+    ]
+}
